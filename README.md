@@ -6,11 +6,12 @@ An ecommerce platform made with React.js,  Css, Redux, Stripe, Material Ui for t
 It also has an [Admin](https://lama-shop-admin.vercel.app/) Panel to edit and add products on the store.
 
 ## App Features
-- This ecommerce store is buit using Next js and Tailwind Css. 
+- This ecommerce store is buit using React js | Nodejs | MongoDB.
 - State management is done using Redux and Redux Persist to persist the app's state like user login and cart on reload.
 - We can register a new account, login to add products. 
 - User authentication is done using JWT.
-- Once we have added products to the cart, we can checkout using Stripe
+- Once we have added products to the cart, we can checkout using Stripe.
+- Has Admin Dashboard to add/edit and delete products and see Sales & Revenue using Firebase Storage Upload
 - The Store also has an admin dashboard that only an admin account has access to. This dashboard can be used to add/edit or delete products on the store.
 
 ## Screenshots
