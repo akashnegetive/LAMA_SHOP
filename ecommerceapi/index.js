@@ -13,9 +13,8 @@ const stripeRoute = require("./routes/stripe");
 
 
 const mongoose = require('mongoose');
-const uri = process.env.MONGO_URL;
 mongoose.set("strictQuery", false);
-mongoose.connect(uri, { useNewUrlParser: true,
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true,
                       useUnifiedTopology: true,
 }).then(()=>{
   console.log("DB connected");
@@ -32,7 +31,9 @@ app.use("/api/carts",cartRoute);
 app.use("/api/orders",orderRoute);
 app.use("/api/checkout",stripeRoute);
 
-
+app.get("/", (req, res) => {
+res.send("Default Route Works!");
+})
 
 
 
